@@ -19,11 +19,10 @@ opcao = gets.chomp.to_i
 case opcao
 when 1
   puts"cerveja"
-when 2 
+when 2
   puts"whisky"
-when 3 
+when 3
   puts"coca"
-else 
-  puts"invalido"
+else
+  puts"invalide"
 end
-
