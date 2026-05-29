@@ -1,10 +1,18 @@
-require_relative "contaCorrente"
-Class contaCorrente < conta
+require_relative "conta"
 
-attr_reader :limite
+class ContaCorrente < Conta
 
-def initialize(:numero, :titular)
-  super(numero, titular)
-  @limite = 150
+  attr_reader :limite
+
+  def initialize(numero, titular)
+    super(numero, titular)
+    @limite = 150
+  end
+  def exibir_saldo
+    p "saldo R$- #{@saldo} !"
+    p"limite R$-#{@limite} !"
+    p "total R$-#{@saldo + @limite}"
 end
-
+ def sacar_valor
+ end
+  end
